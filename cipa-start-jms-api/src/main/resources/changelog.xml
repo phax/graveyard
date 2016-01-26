@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2013-2015 Philip Helger (www.helger.com)
+    philip[at]helger[dot]com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<changelog xmlns="http://www.phloc.com/ns/changelog/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.phloc.com/ns/changelog/1.0 schemas/changelog-1.0.xsd" version="1.0" component="cipa-start-jms-api">
+  <release date="2014-11-05" version="1.5.0" />
+  <release date="2014-07-01" version="1.4.0" />
+  <release date="2013-11-04" version="1.3.3" />
+  <entry date="2013-11-04" category="api" action="add">
+    <change>
+      <text locale="en">Extracted CSTARTJMS class with all constants</text>
+    </change>
+  </entry>
+  <release date="2013-10-26" version="1.3.2" />
+  <entry date="2013-10-26" category="api" action="change">
+    <change>
+      <text locale="en">MessageID is now optional in peppol-sender-response</text>
+    </change>
+  </entry>
+  <release date="2013-10-01" version="1.3.1" />
+  <entry date="2013-09-23" category="api" action="change">
+    <change>
+      <text locale="en">JAXB generated stuff not Serializable because of xs:any</text>
+    </change>
+  </entry>
+  <release date="2013-09-13" version="1.3.0" />
+  <entry date="2013-09-13" category="api" action="add">
+    <change>
+      <text locale="en">Added new class WrappedPeppolKeyValuePairHelper</text>
+    </change>
+  </entry>
+  <entry date="2013-09-13" category="tech" action="add" incompatible="true">
+    <change>
+      <text locale="en">Extended peppol-sender-response.xsd with the PEPPOL MessageID</text>
+    </change>
+  </entry>
+  <release date="2013-09-10" version="1.2.0" />
+  <entry date="2013-09-10" category="tech" action="add">
+    <change>
+      <text locale="en">Added new XSD peppol-sender-response.xsd for the result of sending via the AP client</text>
+    </change>
+  </entry>
+  <entry date="2013-09-08" category="api" action="add">
+    <change>
+      <text locale="en">Made the necessary XSDs of the different types public</text>
+    </change>
+  </entry>
+  <release date="2013-09-07" version="1.1.0" />
+  <entry date="2013-09-07" category="api" action="change" incompatible="true">
+    <change>
+      <text locale="en">Extended WrappedPeppol XSD to support arbitrary key-value-pairs for additional (untyped) information</text>
+    </change>
+  </entry>
+  <entry date="2013-09-07" category="api" action="change" incompatible="true">
+    <change>
+      <text locale="en">Renamed exported package to com.helger.cipa.transport.start.jmsapi</text>
+    </change>
+  </entry>
+  <entry date="2013-09-07" category="api" action="change" incompatible="true">
+    <change>
+      <text locale="en">Renamed project from 'cipa-start-jmsreceiver-api' to 'cipa-start-jms-api'</text>
+    </change>
+  </entry>
+  <release date="2013-09-04" version="1.0.1" />
+  <!-- changelog started -->
+</changelog>
