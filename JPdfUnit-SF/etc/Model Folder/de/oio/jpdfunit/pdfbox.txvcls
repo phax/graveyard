@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeav64fsv2nnv3f">
+		<property name="$metaclass" value="Class Diagram"/>
+		<property name="bounds" value="-5,-5,831,231"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="370,60,151,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:PDFTextStripper">
+				<property name="sourceAnchor" value="435,121"/>
+				<property name="targetAnchor" value="435,160"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:pdDocument">
+				<property name="sourceAnchor" value="521,113"/>
+				<property name="targetAnchor" value="600,138"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:infos">
+				<property name="sourceAnchor" value="521,85"/>
+				<property name="targetAnchor" value="594,85"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Document">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,130,111,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.util.PDFTextStripper">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="370,160,170,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:bin:org.pdfbox.util.PDFTextStripper:document">
+				<property name="sourceAnchor" value="540,170"/>
+				<property name="targetAnchor" value="600,156"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.pdmodel.PDDocumentInformation">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="594,50,227,60"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="180,220,152,52"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.pdmodel.PDDocument">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="600,130,141,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:bin:org.pdfbox.pdmodel.PDDocument:documentInformation">
+				<property name="sourceAnchor" value="691,130"/>
+				<property name="targetAnchor" value="691,110"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Content">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,10,111,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="158,130,175,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:content">
+				<property name="sourceAnchor" value="213,130"/>
+				<property name="targetAnchor" value="116,71"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:Document">
+				<property name="sourceAnchor" value="158,149"/>
+				<property name="targetAnchor" value="121,149"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:analyser">
+				<property name="sourceAnchor" value="309,130"/>
+				<property name="targetAnchor" value="370,111"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="160,10,172,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter:Content">
+				<property name="sourceAnchor" value="160,40"/>
+				<property name="targetAnchor" value="121,40"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter:analyser">
+				<property name="sourceAnchor" value="332,65"/>
+				<property name="targetAnchor" value="370,65"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- ==========================================================================
+
+ $Id: .pmd.xml,v 1.3 2009/12/14 15:58:51 s_schaefer Exp $
+
+=========================================================================== -->
+
+<ruleset name="abbott">
+	<description>Abbott EntryList rule set.</description>
+	<rule ref="rulesets/basic.xml"/>
+	<rule ref="rulesets/braces.xml"/>
+	<rule ref="rulesets/clone.xml"/>
+	<rule ref="rulesets/codesize.xml"/>
+	<rule ref="rulesets/coupling.xml"/>
+	<rule ref="rulesets/design.xml">
+		<exclude name="AbstractClassWithoutAbstractMethod"/>
+		<exclude name="AvoidSynchronizedAtMethodLevel"/>
+ 		<exclude name="ConfusingTernary"/>
+  		<exclude name="MissingStaticMethodInNonInstantiatableClass"/>
+	</rule>
+	<rule ref="rulesets/favorites.xml"/>
+	<rule ref="rulesets/finalizers.xml"/>
+	<rule ref="rulesets/junit.xml"/>
+	<rule ref="rulesets/logging-java.xml"/>
+	<rule ref="rulesets/strictexception.xml"/>
+	<rule ref="rulesets/strings.xml"/>
+	<rule ref="rulesets/unusedcode.xml"/>
+</ruleset>

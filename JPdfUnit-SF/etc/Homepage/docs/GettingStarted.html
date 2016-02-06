@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JPdfUnit documentation, getting started, howto and tutorial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JPdfUnit documentation, here you can found a getting started, a howto and a tutorial for working with JpdfUnit" />
+<meta name="identifier-url" content="http://jpdfunit.sourceforge.net/" />
+<meta name="author" content="Benjamin&nbsp;Bratkus" />
+<meta name="publisher-email" content="jpdfunit-users@lists.sourceforge.net" />
+<meta name="keywords" content="JpdfUnit, documentation, getting started, howto, tutorial, JUnit, test, pdf, usage" />
+<meta name="robots" content="index,follow" />
+<style type="text/css" media="screen,projection">@import "../layout/layout.css";</style>
+<style type="text/css" media="print">@import "../layout/druckversion.css";</style>
+</head>
+<body>
+<div id="Header">
+<b>docs&nbsp;&gt;&nbsp;getting&nbsp;started,&nbsp;howto&nbsp;and&nbsp;tutorial</b>
+</div>
+<div id="logo">
+<img src="../pics/logos/jpdfunit.jpg" alt="JPdfUnit" />
+</div>
+<div id="logos">
+<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=144110&amp;type=2" width="125" height="37" alt="SourceForge.net Logo" /></a>
+<br /><br />
+<a href="http://junit.org">
+<img src="../pics/logos/junit.jpg" alt="JUnit" /></a>
+<br /><br />
+<a href="http://pdfbox.org">
+<img src="../pics/logos/pdfbox.jpg" alt="PDFBox" /></a>
+<br /><br />
+<a href="http://oio.de">
+<img src="../pics/logos/oio.jpg" alt="Orientation in Objects" /></a>
+</div>
+<div id="Content">
+<h1>getting started</h1><br />
+<h3>dependencies</h3>
+<p>
+Using JpdfUnit there are some dependencies which have to be set. By name there is a need to integrate <a href="http://www.junit.org" title="junit testframework">JUnit</a>,
+<a href="http://www.pdfbox.org" title="PDFBox&nbsp;-&nbsp;Java PDF Library">PDFBox</a> and <a href="http://logging.apache.org/log4j" title="Log4j&nbsp;Project">Log4j&nbsp;Project</a> (Deprecated since 0.92).
+The tested versions of the dependencies are added to our distribution files which you can download <a href="https://sourceforge.net/project/showfiles.php?group_id=144110" title="download">here</a>.
+
+Integrate the jars into your project now you are ready to write your own tests and to use the functionality of JpdfUnit.<br /><br />
+</p>
+<h2>howto work with JPdfUnit</h2><br />
+<h3>1.&nbsp;download the java archives(jar)</h3><br />
+<p>
+JPdfUnit was developed with the following dependencies. You can download the actual versions of the dependencies following the
+links below.
+</p>
+<table>
+<tr>
+<td>Junit &nbsp;(tested)</td>
+<td><a href="http://www.junit.org" title="junit testframework"><b>JUnit</b></a></td>
+</tr>
+<tr>
+<td>PDFBox &nbsp;(tested)</td>
+<td><a href="http://www.pdfbox.org" title="PDFBox&nbsp;-&nbsp;Java PDF Library"><b>PDFBox</b></a></td>
+</tr>
+<tr>
+<td>log4j &nbsp;(tested)(Deprecated since 0.92)</td>
+<td><a href="http://logging.apache.org/log4j" title="Log4j&nbsp;Project"><b>Log4j&nbsp;Project</b></a></td>
+</tr>
+</table>
+<br /><br />
+<h3>2.&nbsp;integrate the jars into your own project</h3><br />
+<p>
+After downloading the three archives you have to integrate these archives into your project.
+</p><br />
+<h3>3.&nbsp;integration with Apache Maven</h3><br />
+<p>
+An alternative to integrate the jars manually is to use Apache Maven. To do this you can upload
+JPdfUnit and PDFBox to your own Maven repository or you can use the Maven repository hosted on the JPdfUnit website
+(http://jpdfunit.sourceforge.net/repo). The following code shows an example of how to use the JPdfUnit Maven 
+repository in your pom file:
+</p>
+<pre>
+&lt;project&gt;
+	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+	&lt;groupId&gt;net.sf.jpdfunit&lt;/groupId&gt;
+	&lt;artifactId&gt;jpdftest&lt;/artifactId&gt;
+	&lt;packaging&gt;jar&lt;/packaging&gt;
+	&lt;name&gt;JPdfTest&lt;/name&gt;
+	&lt;version&gt;1.0&lt;/version&gt;
+	&lt;description&gt;Test project for JPdfUnit Maven repo.&lt;/description&gt;
+	&lt;dependencies&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;net.sf.jpdfunit&lt;/groupId&gt;
+			&lt;artifactId&gt;jpdfunit&lt;/artifactId&gt;
+			&lt;version&gt;1.2&lt;/version&gt;
+		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+	&lt;repositories&gt;
+		&lt;repository&gt;
+			&lt;id&gt;jpdfunit-repo&lt;/id&gt;
+			&lt;url&gt;http://jpdfunit.sourceforge.net/repo&lt;/url&gt;
+		&lt;/repository&gt;
+	&lt;/repositories&gt;
+&lt;/project&gt;
+</pre>
+<h2>tutorial</h2><br />
+<p>
+JPdfUnit integrates PDFBox as an PDF API with the JUnit framwork for the
+test of pdf documents so JPdfUnit is a high level api. It was designed for
+an easy access to the PDFBOX library without having to use it directly. For
+instance you can test the meta data of the pdf document like the author or
+the creation date or search for content via Strings, fragments of words or
+even regular expressions. Different simple ready-to-use
+assertions allow the user to compare the expected data to the concrete data of the pdf
+document. JPdfUnit tests one pdf document. Three typical usage scenarios of JPDFUnit
+are documented in the <a href="Framework.html" title="framework">framework</a>.
+</p><br />
+<h3>1.&nbsp;example</h3><br />
+<p>
+For a better understanding of JPdfUnit there is a simple example. It shows a typical basic test of
+embbeded text elements and some meta information. The document is a real life example a training curriculum of a Java service company.
+The examples and the pdf files also can be found in the sources of JPdfUnit.<br /><br />
+</p>
+<pre>
+public class GenerelDocumentTest extends DocumentTestCase {
+
+	/**
+	 * @param name
+	 */
+	public GenerelDocumentTest(String name) {
+		super(name);
+	}
+
+	protected DocumentDataSource getDataSource() {
+		DocumentDataSource datasource = new PdfDataSource(
+				"etc/testing-pdfs/oio-katalog-mit-logo-mit-farben.pdf");
+		return datasource;
+	}
+	public void testAssertContentContainsText() {
+         	//a pdf document could probably contain more information and text you expect
+		assertContentContainsText("Naja,", TextSearchType.STARTSWITH);
+		assertContentContainsText("OIO-Akademie",
+				TextSearchType.CONTAINS);
+		assertContentContainsText("Schulungskatalog",
+				TextSearchType.ENDSWITH);
+		assertContentContainsText(
+				"[\\S+\\s+]+?OIO-Akademie[\\s+\\S+]+?", TextSearchType.REGEXP);
+	}
+
+	public void testAssertDocumentInformation() {
+		assertCreatorEquals("XEP 3.7.8 Client");
+		assertAuthorsNameEquals("Unknown");
+	}
+
+}
+
+
+public class AllTests {
+
+
+	public static Test suite(){
+		TestSuite suite = new TestSuite();
+		suite.addTest(new TestSuite(GenerelDocumentTest.class));
+		return suite;
+	}
+}
+
+</pre><br />
+<h3>2.&nbsp;write your own tests</h3><br />
+<p>
+There are three posibilities to test with JPdfUnit. Either your Test could simply extend the DocumentTestCase class or
+you could work with the DocumentTester class of the framework. The second posibility is designed for the case that you can not
+inherit the DocumentTestCase class due to other dependencies i.e. <a href="http://jwebunit.sourceforge.net/" title="jWebUnit">jWebUnit</a>.
+Third you can use JPdfUnit as a high level api for accesing documents.
+</p><br />
+<h3>2.1. extend the DocumentTestCase class</h3><br />
+<p>
+The easiest way to use jpdfunit is to make your test class extend the DocumentTestCase class. First you need to create a test class.
+DocumentTestCase extends the JUnit TestCase class. There is just one method which has to be implemented the getDataSource(). We hide the
+setup() and tearDown() mechanism and use it for the document handling (i.e. creating testing objects and closing the document for you). There is
+a template method to access the setup method. You have to overwrite the onSetup() method for your own setup.
+Following is a sample implementation:
+</p><br />
+<pre>
+public class OioTest extends DocumentTestCase {<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;public OioTest(String name) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(name);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;//get up your data source<br />
+&nbsp;&nbsp;&nbsp;&nbsp;protected DocumentDataSourcet getDataSource() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DocumentDataSource datasource = new PdfDataSource("etc/testing-pdfs/DocumentEncryptionTest.pdf");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return datasource;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;//test if the document is encrypted<br />
+&nbsp;&nbsp;&nbsp;&nbsp;public void testAssertIsDocumentEncrypted(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertIsDocumentEncrypted(true);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+</pre><br />
+<h3>2.2. Do not extend the DocumentTestCase class</h3><br />
+<p>
+In order to use Jpdfunit you are not required to extend the DocumentTestCase class. You can also use the DocumentTester class
+which is the core element of JPdfUnit. The best practice is to override the standard JUnit
+setUp() method creating there a DocumentTester with your pdf as parameter for the constructor. After this inital step
+execute the desired operation on your pdf file. And close the document of your DocumentTester in the teardown() method.
+Following is a sample implementation:<br />
+</p><br />
+<pre>
+public class AllTests {<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static Test suite(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TestSuite suite = new TestSuite();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suite.addTest(new TestSuite(PdfTesterEncryptionTest.class));<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return suite;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br /><br />
+import junit.framework.TestCase;
+import de.oio.jpdfunit.DocumentTester;
+
+public class DocumentTesterEncryptionTest extends TestCase{<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;//know you need a DocumentTester for testing the pdf document<br />
+&nbsp;&nbsp;&nbsp;&nbsp;private DocumentTester tester;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;public DocumentTesterEncryptionTest(String name){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(name);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+//you have decided to inherit another TestCase normally you have to overwrite the setup() now
+&nbsp;&nbsp;&nbsp;&nbsp;protected void setUp() throws Exception {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;// creating a new DocumentTester via String parameter<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tester = return new DocumentTester("etc/testing-pdfs/DocumentEncryptionTest.pdf");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+//you have decided to inherit another TestCase normally you have to overwrite the tearDown() now
+&nbsp;&nbsp;&nbsp;&nbsp;protected void tearDown() throws Exception {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;//after finishing your tests you have to close the DocumentTester<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tester.close();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;//test the encryption length of your pdf document<br />
+&nbsp;&nbsp;&nbsp;&nbsp;public void testAssertEncryptionLenghthEquals(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tester.assertEncryptionLenghthEquals(40);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+</pre><br />
+<h3>3. just use the DocumentTester class in a application</h3><br />
+<p>
+As promised here is the third possibility to use the framework. Therefore you have to create a DocumentTester
+in your Output class and work with the DocumentTester's Content and Document to work with the framework without
+using JUnit.
+</p><br />
+<pre>
+public class TesterWorks {
+
+	private static DocumentTester tester = new DocumentTester("etc/testing-pdfs/DocumentEncryptionTest.pdf");
+	private static DocumentTester myTester = new DocumentTester("etc/testing-pdfs/DocumentInformationTest.pdf");
+
+
+	public static void main (String []args) throws Exception {
+                 //using two tester in this example because one pdf is encrypted
+		System.out.println("Is document encrypted? " + tester.getDocument().isDocumentEncrypted() );
+                 //if the document is not encrypted you can access all meta data and content via the Content
+                 //and Document interfaces of the DocumentTester
+                 System.out.println("Page Count ? " + myTester.getDocument().countPages() );
+                 //be good and close the documents after work
+                 tester.close();
+		myTester.close();
+
+	}
+
+
+
+}
+</pre><br />
+<h3>4. write your own assert methods</h3><br />
+<p>
+Finally there is the possibility to write own assert methods. So you have to work again with the DocumentTester and the
+interfaces Document and Content depending on your new assert method. Here is a method of the DocumentTester your own assert
+methods could look similar:
+</p><br />
+<pre>
+
+public void assertContentContainsText(String text, TextSearchType type) {
+	Assert.assertTrue(
+		"The testet pdf-document doesn't contain the expected parameter.",
+		content.isTextContent(text, type));
+
+	}
+}
+</pre>
+
+</div>
+<div id="Menu">
+<a href="../index.html" title="welcome"><b>home</b></a><br />
+<a href="GettingStarted.html" title="documentation"><b>documentation</b></a><br />
+&nbsp;<a href="GettingStarted.html" title="getting&nbsp;started"><b>getting started</b></a><br />
+&nbsp;<a href="Framework.html" title="framework"><b>framework</b></a><br />
+&nbsp;<a href="javadoc/index.html" title="javadoc"><b>javadoc</b></a><br />
+&nbsp;<a href="Frequently_Asked_Questions.html" title="Frequently Asked Questions"><b>faq</b></a><br />
+<a href="https://sourceforge.net/project/showfiles.php?group_id=144110" title="download"><b>download</b></a><br />
+<a href="https://sourceforge.net/forum/?group_id=144110" title="forum"><b>forum</b></a><br />
+<a href="../references/References.html" title="references"><b>references</b></a><br />
+<a href="../support/Support.html" title="support"><b>support</b></a><br />
+<a href="https://sourceforge.net/projects/jpdfunit/" title="at sourceforge"><b>sourceforge</b></a><br />
+</div>
+<div id="banners">
+<a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" /></a>
+<a href="http://jigsaw.w3.org/css-validator/">
+<img style="border:0;width:88px;height:31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss"
+alt="Valid CSS!" /></a>
+<a href="http://www.w3.org/Style/CSS/Buttons/"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Style/CSS/Buttons/mwcts" alt="Desidned by CSS!" /></a>
+</div>
+</body>
+</html>

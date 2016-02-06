@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeauxcwox-l1dzx4">
+		<property name="$metaclass" value="Class Diagram"/>
+		<property name="bounds" value="-5,-5,783,439"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.ContentAssertion">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="420,30,131,55"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Document">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="181,30,91,55"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="31,170,151,52"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTestCase:pdfTester">
+				<property name="sourceAnchor" value="182,196"/>
+				<property name="targetAnchor" value="210,196"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentTestCase:TestCase">
+				<property name="sourceAnchor" value="92,170"/>
+				<property name="targetAnchor" value="92,85"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTestCase:tester">
+				<property name="sourceAnchor" value="182,196"/>
+				<property name="targetAnchor" value="210,196"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTester">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="210,168,161,54"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.DocumentTester:DocumentAssertion">
+				<property name="sourceAnchor" value="371,196"/>
+				<property name="targetAnchor" value="411,196"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:factory">
+				<property name="sourceAnchor" value="251,168"/>
+				<property name="targetAnchor" value="135,85"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:document">
+				<property name="sourceAnchor" value="251,168"/>
+				<property name="targetAnchor" value="251,85"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:content">
+				<property name="sourceAnchor" value="323,168"/>
+				<property name="targetAnchor" value="323,85"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Content">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="290,30,91,55"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="31,30,133,55"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.MetaDataAssertion">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="601,168,142,55"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentAssertion">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="411,170,161,55"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentAssertion:MetaDataAssertion">
+				<property name="sourceAnchor" value="572,196"/>
+				<property name="targetAnchor" value="601,196"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentAssertion:ContentAssertion">
+				<property name="sourceAnchor" value="485,170"/>
+				<property name="targetAnchor" value="485,85"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

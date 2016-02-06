@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>pdfbox</groupId>
+  <artifactId>pdfbox</artifactId>
+  <name>PDFBox - Java PDF Library</name>
+  <version>0.7.2</version>
+</project>

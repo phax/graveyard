@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeas5a0o0-9qfx5g">
+		<property name="$metaclass" value="Class Diagram"/>
+		<property name="bounds" value="-5,-5,783,439"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="36,175,121,53"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Document">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="263,23,90,55"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PdfBoxFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="523,318,114,39"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.PdfBoxFactory:DocumentFactory">
+				<property name="sourceAnchor" value="523,337"/>
+				<property name="targetAnchor" value="443,337"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="500,161,102,81"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTestCase:pdfTester">
+				<property name="sourceAnchor" value="500,201"/>
+				<property name="targetAnchor" value="420,201"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="310,318,133,39"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.ReturnValueException">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,410,157,52"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentAssertion">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="373,10,144,81"/>
+		</reference>
+	</view>
+</nodeSet>

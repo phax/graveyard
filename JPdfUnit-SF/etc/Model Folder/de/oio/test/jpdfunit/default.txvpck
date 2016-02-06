@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eas68rmv-mf0u3m">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.PdfTesterDocumentInformationTest">
+			<property name="bounds" value="202,20,200,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.PdfTesterEncryptionTest">
+			<property name="bounds" value="20,20,172,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.OioTest">
+			<property name="bounds" value="20,70,75,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.PdfTesterContentTest">
+			<property name="bounds" value="105,70,157,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.DocumentInformationTest">
+			<property name="bounds" value="10,10,183,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.EvilDocumentTest">
+			<property name="bounds" value="440,1,134,40"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3ja867-ka5f02">
+			<property name="bounds" value="16,79,87,44"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.AllTests">
+			<property name="bounds" value="272,70,77,27"/>
+		</reference>
+	</view>
+</nodeSet>

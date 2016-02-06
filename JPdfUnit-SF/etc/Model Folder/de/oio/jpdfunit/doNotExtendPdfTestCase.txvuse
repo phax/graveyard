@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-rqmxokeasaidlq-f2e2i9">
+		<property name="$metaclass" value="Use Case Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.PdfTesterEncryptionTest">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="170,0,200,227"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.test.jpdfunit.PdfTesterEncryptionTest:tester">
+				<property name="sourceAnchor" value="370,113"/>
+				<property name="targetAnchor" value="440,113"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.test.jpdfunit.PdfTesterEncryptionTest:TestCase">
+				<property name="sourceAnchor" value="170,65"/>
+				<property name="targetAnchor" value="140,65"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTester">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="440,0,200,477"/>
+			<property name="hideAttribute" value="true"/>
+			<property name="hideProperty" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:junit.framework.TestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="20,0,120,131"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Operation"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:e_method:bin:junit.framework.TestCase.run:run~Ljunit.framework.TestResult;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

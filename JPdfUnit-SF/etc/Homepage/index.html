@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JPdfUnit homepage, framework for testing generated pdf document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JPdfUnit hompage, JpdfUnit is a framework for testing a generated pdf document with the JUnit Test Framework. The pdf library PDFBox is used to provide the functionality of pdf document handling." />
+<meta name="identifier-url" content="http://jpdfunit.sourceforge.net/" />
+<meta name="author" content="Benjamin&nbsp;Bratkus" />
+<meta name="publisher-email" content="jpdfunit-users@lists.sourceforge.net" />
+<meta name="keywords" content="JpdfUnit, homepage, testing, java, api, test pdf, JUnit, PDFBox, framework, oio, pdf, test, extension" />
+<meta name="robots" content="index,follow" />
+<style type="text/css" media="screen,projection">@import "layout/layout.css";</style>
+<style type="text/css" media="print">@import "layout/druckversion.css";</style>
+</head>
+<body>
+<div id="Header">
+<b>home</b>
+</div>
+<div id="logo">
+<img src="pics/logos/jpdfunit.jpg" alt="JPdfUnit" />
+</div>
+<div id="logos">
+<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=144110&amp;type=2" width="125" height="37" alt="SourceForge.net Logo" /></a>
+<br /><br />
+<a href="http://junit.org">
+<img src="pics/logos/junit.jpg" alt="JUnit" /></a>
+<br /><br />
+<a href="http://pdfbox.org">
+<img src="pics/logos/pdfbox.jpg" alt="PDFBox" /></a>
+<br /><br />
+<a href="http://oio.de">
+<img src="pics/logos/oio.jpg" alt="Orientation in Objects" /></a>
+</div>
+<div id="Content">
+<h1>overview</h1>
+<p>
+JpdfUnit is a framework for testing a generated pdf document with the JUnit test framework so JPdfUnit is a high level api. The
+framework is designed for an easy access to the PDFBox library. This functionality provides the user a lot of
+possibilities in pdf document handling. For instance you can test the meta data of the pdf document like the author or the
+creation date or search for content via Strings, fragments of words or even regular expressions. Different simple ready-to-use
+assertions allow the user to compare the expected data to the concrete data of the pdf document. JPdfUnit is developed to test
+one pdf document. You have got three different kinds of using the framework i.e. you can inherit our DocumentTestCase
+shown in the example or you can work with our DocumentTester class to avoid inheritance from our framework.
+Here is a small example&nbsp;:&nbsp;<br /></p>
+<pre>
+public class OioTest extends DocumentTestCase {<br /><br />
+	public OioTest(String name) {<br />
+		super(name);<br />
+	}<br />
+	protected DocumentDataSource getDataSource() {<br />
+		DocumentDataSource datasource =
+			new PdfDataSource("etc/testing-pdfs/DocumentInformationTest.pdf");<br />
+		return datasource;<br />
+	}<br />
+	public void testAssertAuthorsNameEquals() {<br />
+		assertAuthorsNameEquals("Benjamin Bratkus");<br />
+	}<br />
+}<br />
+</pre>
+</div>
+<div id="Menu">
+<a href="index.html" title="welcome"><b>home</b></a><br />
+<a href="docs/GettingStarted.html" title="documentation"><b>documentation</b></a><br />
+<a href="https://sourceforge.net/project/showfiles.php?group_id=144110" title="download"><b>download</b></a><br />
+<a href="https://sourceforge.net/forum/?group_id=144110" title="forum"><b>forum</b></a><br />
+<a href="references/References.html" title="references"><b>references</b></a><br />
+<a href="support/Support.html" title="support"><b>support</b></a><br />
+<a href="https://sourceforge.net/projects/jpdfunit/" title="at sourceforge"><b>sourceforge</b></a><br />
+</div>
+<div id="banners">
+<a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" /></a>
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://jpdfunit.sourceforge.net/layout/layout.css">
+<img style="border:0;width:88px;height:31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss"
+alt="Valid CSS!" /></a>
+<a href="http://www.w3.org/Style/CSS/Buttons/"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Style/CSS/Buttons/mwcts" alt="Desidned by CSS!" /></a>
+</div>
+</body>
+</html>

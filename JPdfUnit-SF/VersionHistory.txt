@@ -1,0 +1,94 @@
+------------------------------------------------------------------------------
+  Legend:
+   - Fixes
+   + Features
+   = Internal changes
+   * Changes required to migrate from one release to another
+
+
+-------------------------------------------------------------------------------
+put in next version here
+-------------------------------------------------------------------------------
+
+Version 1.2:
+
+	+ Updated PDFBox to the Apache Version
+	  -> JPdfUnit can be used with PDFBox 1.0<=version<2.0
+	  -> Starting at version 1.3, PDFBox has a Bug that can cause a big amount of errors in the log:
+	     https://issues.apache.org/jira/browse/PDFBOX-940
+	  -> To test encrypted pdfs, you now have to include optional dependencies of PDFBox:
+	     http://pdfbox.apache.org/dependencies.html
+	= The complete build is now maven based
+	* Due to the PDFBox Update, the asserts "assertIsOwnerPasswd" and "assertIsUserPasswd" aren't supported anymore
+	  Use tester.getDocument().decryptDocument("my-password"); instead and check for thrown exceptions
+
+-------------------------------------------------------------------------------
+
+Version 1.1:
+
+	+ JPdfUnit is now ready for maven
+	  Added a maven POM file
+	  changed the project layout to the maven standard
+	  a maven repo containing JPdfUnit and a compatible version of PdfBox can be found at:
+	    http://jpdfunit.sourceforge.net/repo/
+	+ updated ant to 1.7.1
+	+ removed unused log4j
+
+-------------------------------------------------------------------------------
+
+Version 1.0:
+
+	= updated development environment to actual versions
+	    Eclipse 3.4
+	    Eclipse Checkstyle Plug-in 4.4.2
+	+ removed compatibility version for Java 1.4 and JUnit 3.8.1
+	    use version 0.94 for Java 1.4 compatibility
+
+-------------------------------------------------------------------------------
+
+Version 0.94:
+
+	+ create directories ${dist.dir} and ${etc.dir}/Homepage in the prepare of build.xml
+	* Change 'testet' to 'tested' in error messages of DocumentTester and PdfBoxAnalyser
+	* Change initalisation to initialization in PdfImplUtil.properties
+	+ Add the following methods in ContentAssertion (interface), DocumentTester and DocumentTestCase:
+		assertContentDoesNotContainText
+		assertContentDoesNotContainTextMultipleTimes
+		assertContentDoesNotContainTextOnPage
+	+ Add getListOfPagesForContent to the Content Interface
+	+ Add 6 tests for this methods in PdfTesterContentTest
+	* Change implementation of getPagesForContent in PdfBoxAnalyser class
+
+-------------------------------------------------------------------------------
+
+Version 0.93:
+
+	+ much more output to the assert methods.
+	+ bookmark tests integration 
+	+ new assert methods for bookmarks
+	= dependency junit 3.8.1 removed
+	= dependency junit 4.1 added
+-------------------------------------------------------------------------------
+
+Version 0.92: 09/19/2005 
+
+  - property data now correct integrated to the jar
+  = lost dependency to log4j 
+  = the regex textsearchtype works now with the find() method of the Matcher class
+  = partial changes to the pdf access i.e. exchanging deprecated methods to the actual
+    commendation
+  + more details added to the output of the assert methods
+-------------------------------------------------------------------------------
+
+Version 0.91: 08/18/2005 
+
+  + implementation of additional test
+  + new font asserts
+  + access font informations 
+  	+ name a font
+  	+ type of a font
+-------------------------------------------------------------------------------
+
+Version 0.9: 07/20/2005 (Demonstration of Project Start)
+
+  + initial release

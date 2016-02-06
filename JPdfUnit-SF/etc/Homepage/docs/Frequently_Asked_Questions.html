@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JPdfUnit documentation, frequently asked questions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="JPdfUnit documentation, here you can found some frequently asked questions about JPdfUnit." />
+<meta name="identifier-url" content="http://jpdfunit.sourceforge.net/" />
+<meta name="author" content="Benjamin&nbsp;Bratkus" />
+<meta name="publisher-email" content="jpdfunit-users@lists.sourceforge.net" />
+<meta name="keywords" content="JpdfUnit, documentation,frequently asked questions, faq, faqs" />
+<meta name="robots" content="index,follow" />
+<style type="text/css" media="screen,projection">@import "../layout/layout.css";</style>
+<style type="text/css" media="print">@import "../layout/druckversion.css";</style>
+</head>
+<body>
+<div id="Header">
+<b>docs&nbsp;&gt;&nbsp;frequently&nbsp;asked&nbsp;questions</b>
+</div>
+<div id="logo">
+<img src="../pics/logos/jpdfunit.jpg" alt="JPdfUnit" />
+</div>
+<div id="logos">
+<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=144110&amp;type=2" width="125" height="37" alt="SourceForge.net Logo" /></a>
+<br /><br />
+<a href="http://junit.org">
+<img src="../pics/logos/junit.jpg" alt="JUnit" /></a>
+<br /><br />
+<a href="http://pdfbox.org">
+<img src="../pics/logos/pdfbox.jpg" alt="PDFBox" /></a>
+<br /><br />
+<a href="http://oio.de">
+<img src="../pics/logos/oio.jpg" alt="Orientation in Objects" /></a>
+</div>
+<div id="Content">
+<h1>faq - frequently asked questions</h1><br />
+<p>
+<a href="#extend">do i have to extend the DocumentTestCase class?</a><br />
+<a href="#java">which java version is required for working with JPdfUnit?</a><br />
+<a href="#dep">what are the dependencies for JPdfUnit?</a><br />
+<a href="#text">i cant find a certain text at the beginning or another location?</a><br />
+<a href="#pageCount">i cant find a text on a certain page?</a><br />
+<a href="#path">how do i have to set the path to my pdf document?</a><br />
+</p><br /><br />
+<p>
+<a name="extend">do i have to extend the DocumentTestCase class?</a><br /><br />
+You dont have to extend the DocumentTestCase class. You can also use the DocumentTester in your test because there are
+some extensions which requires that you extend their TestCase class.<br /><br />
+<a name="java">which java version is required for working with JPdfUnit?</a><br /><br />
+Java 1.5 is required for working with JPdfUnit (for Java 1.4 support use version 0.94).<br /><br />
+<a name="dep">what are the dependencies for JPdfUnit?</a><br /><br />
+For using JpdfUnit there are some dependencies which has to be set. There is a need to integrate <a href="http://www.junit.org" title="junit testframework">JUnit</a>
+and <a href="http://www.pdfbox.org" title="PDFBox&nbsp;-&nbsp;Java PDF Library">PDFBox</a>
+ into your own Project. After integrating the jars into your
+own project now you should be able to write your own tests and to use the functionality of JpdfUnit.<br /><br />
+<a name ="text">i cant find a certain text at the beginning or another location?</a><br /><br />
+this is a basic problem. a pdf document can contain more text as you expect. I.e. you have to set some text in
+the background color to get a "blank" page with render x. Best practice is to look at the hole content of a page to get
+the best informations about your text locations if you want to search for the text in a special way (i.e. beginnig, equals, end of the page)<br /><br />
+<a name="pageCount">i cant find a text on a certain page?</a><br /><br />
+The page count of JPdfUnit is 1-based, means that a documents page number starts with 1.<br /><br />
+<a name="path">how do i have to set the path to my pdf document?</a><br /><br />
+You have two choices - relative or absolute. Relative means typically relative to the node where your java vm was started.
+I.e: <br /> 
+If (working with a ms windows enviroment) {<br />
+absolute: d:\\workspaces/jpdfunit/jPdfUnit-SF/etc/testing-pdfs/DocumentEncryptionTest.pdf <br />
+relative: etc/testing-pdfs/DocumentInformationTest.pdf (relative to the project root within eclipse) <br />
+} else { <br />
+absolute: /home/.../build/orga/SeminarMitLogo/thepdf.pdf (relative to the project root within eclipse) <br />
+relative: build/orga/SeminarMitLogo/thepdf.pdf (relative to the project root within eclipse) <br />
+}
+</p>
+</div>
+<div id="Menu">
+<a href="../index.html" title="welcome"><b>home</b></a><br />
+<a href="GettingStarted.html" title="documentation"><b>documentation</b></a><br />
+&nbsp;<a href="GettingStarted.html" title="getting&nbsp;started"><b>getting started</b></a><br />
+&nbsp;<a href="Framework.html" title="architecture"><b>framework</b></a><br />
+&nbsp;<a href="javadoc/index.html" title="javadoc"><b>javadoc</b></a><br />
+&nbsp;<a href="Frequently_Asked_Questions.html" title="Frequently Asked Questions"><b>faq</b></a><br />
+<a href="https://sourceforge.net/project/showfiles.php?group_id=144110" title="download"><b>download</b></a><br />
+<a href="https://sourceforge.net/forum/?group_id=144110" title="forum"><b>forum</b></a><br />
+<a href="../references/References.html" title="references"><b>references</b></a><br />
+<a href="../support/Support.html" title="support"><b>support</b></a><br />
+<a href="https://sourceforge.net/projects/jpdfunit/" title="at sourceforge"><b>sourceforge</b></a><br />
+</div>
+<div id="banners">
+<a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" /></a>
+<a href="http://jigsaw.w3.org/css-validator/">
+<img style="border:0;width:88px;height:31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss"
+alt="Valid CSS!" /></a>
+<a href="http://www.w3.org/Style/CSS/Buttons/"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Style/CSS/Buttons/mwcts" alt="Desidned by CSS!" /></a>
+</div>
+</body>
+</html>

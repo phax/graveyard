@@ -1,0 +1,37 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.jpdfunit</groupId>
+	<artifactId>jpdfunit</artifactId>
+	<packaging>jar</packaging>
+	<name>JPdfUnit</name>
+	<version>1.1</version>
+	<description>JPdfUnit integrates PDFBox as an PDF API with the
+		JUnit framwork for the test of pdf documents so JPdfUnit is a high
+		level api. Simple ready-to-use assertions help to compare the expected
+		data to the concrete data of the pdf document.</description>
+	<url>http://jpdfunit.sourceforge.net/
+	</url>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt
+			</url>
+		</license>
+	</licenses>
+	<scm>
+		<url>http://jpdfunit.cvs.sourceforge.net/jpdfunit
+		</url>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>[4.0,5.0)</version>
+		</dependency>
+		<dependency>
+			<groupId>pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>0.7.2</version>
+		</dependency>
+	</dependencies>
+</project>

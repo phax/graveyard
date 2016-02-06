@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9ea6vjfpydc2z47">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser">
+			<property name="bounds" value="187,20,121,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxFactory">
+			<property name="bounds" value="168,69,114,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.ReturnValueException">
+			<property name="bounds" value="20,20,157,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter">
+			<property name="bounds" value="191,1,175,40"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:analyser">
+				<property name="sourceAnchor" value="280,1"/>
+				<property name="targetAnchor" value="280,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter">
+			<property name="bounds" value="10,10,162,40"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter:analyser">
+				<property name="sourceAnchor" value="172,35"/>
+				<property name="targetAnchor" value="187,35"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

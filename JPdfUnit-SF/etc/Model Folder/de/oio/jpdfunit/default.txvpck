@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9ea2du5u5-nh17h3">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<property name="bounds" value="-5,-5,1061,525"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.ContentAssertion">
+			<property name="bounds" value="510,108,142,48"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.StartsWithTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="546,400,170,39"/>
+			<property name="collapsedCompartments" value="Attribute"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.StartsWithTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="554,439"/>
+				<property name="targetAnchor" value="546,590"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.TextSearchType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="429,300,125,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:CONTAINS">
+				<property name="sourceAnchor" value="554,327"/>
+				<property name="targetAnchor" value="542,339"/>
+				<property name="bendpoints" value="591,327,591,376,542,376"/>
+				<property name="smooth_bendpoints" value="591,327,591,376,542,376"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:ENDSWITH">
+				<property name="sourceAnchor" value="554,335"/>
+				<property name="targetAnchor" value="550,339"/>
+				<property name="bendpoints" value="583,335,583,368,550,368"/>
+				<property name="smooth_bendpoints" value="583,335,583,368,550,368"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:EQUALS">
+				<property name="sourceAnchor" value="554,319"/>
+				<property name="targetAnchor" value="534,339"/>
+				<property name="bendpoints" value="599,319,599,384,534,384"/>
+				<property name="smooth_bendpoints" value="599,319,599,384,534,384"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:WORD">
+				<property name="sourceAnchor" value="554,315"/>
+				<property name="targetAnchor" value="530,339"/>
+				<property name="bendpoints" value="603,315,603,388,530,388"/>
+				<property name="smooth_bendpoints" value="603,315,603,388,530,388"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:REGEXP">
+				<property name="sourceAnchor" value="554,323"/>
+				<property name="targetAnchor" value="538,339"/>
+				<property name="bendpoints" value="595,323,595,380,538,380"/>
+				<property name="smooth_bendpoints" value="595,323,595,380,538,380"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:STARTSWITH">
+				<property name="sourceAnchor" value="554,331"/>
+				<property name="targetAnchor" value="546,339"/>
+				<property name="bendpoints" value="587,331,587,372,546,372"/>
+				<property name="smooth_bendpoints" value="587,331,587,372,546,372"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:searcher">
+				<property name="sourceAnchor" value="504,339"/>
+				<property name="targetAnchor" value="504,590"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.EndsWithTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="595,531,161,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.EndsWithTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="634,570"/>
+				<property name="targetAnchor" value="563,604"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="290,470,175,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:content">
+				<property name="sourceAnchor" value="348,470"/>
+				<property name="targetAnchor" value="260,413"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:Document">
+				<property name="sourceAnchor" value="364,470"/>
+				<property name="targetAnchor" value="364,413"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxDocumentAdapter:analyser">
+				<property name="sourceAnchor" value="337,509"/>
+				<property name="targetAnchor" value="337,628"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="120,470,162,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter:Content">
+				<property name="sourceAnchor" value="219,470"/>
+				<property name="targetAnchor" value="219,413"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxContentAdapter:analyser">
+				<property name="sourceAnchor" value="248,509"/>
+				<property name="targetAnchor" value="248,628"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9ea2du5v0s4jerc">
+			<property name="bounds" value="-160,610,161,189"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.RegexpTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="595,590,152,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.RegexpTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="595,609"/>
+				<property name="targetAnchor" value="563,609"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.pdmodel.PDDocumentInformation">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="5,708,227,61"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.TextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="454,590,109,84"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.pdmodel.PDDocument">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="150,780,141,51"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_ast:bin:org.pdfbox.pdmodel.PDDocument:documentInformation">
+				<property name="sourceAnchor" value="191,780"/>
+				<property name="targetAnchor" value="191,769"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactoryException">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="112,10,188,52"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="160,80,144,51"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.MetaDataAssertion">
+			<property name="bounds" value="510,50,142,48"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.EqualsTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="582,452,145,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.EqualsTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="635,491"/>
+				<property name="targetAnchor" value="546,590"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.WordTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="595,670,139,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.WordTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="595,672"/>
+				<property name="targetAnchor" value="563,672"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:junit.framework.TestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,320,141,53"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:bin:junit.framework.TestCase:junit.framework.Assert">
+				<property name="sourceAnchor" value="80,191"/>
+				<property name="targetAnchor" value="180,446"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="215,628,170,60"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:PDFTextStripper">
+				<property name="sourceAnchor" value="353,688"/>
+				<property name="targetAnchor" value="353,780"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:pdDocument">
+				<property name="sourceAnchor" value="253,688"/>
+				<property name="targetAnchor" value="253,780"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:textsearcher">
+				<property name="sourceAnchor" value="385,651"/>
+				<property name="targetAnchor" value="454,651"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxAnalyser:infos">
+				<property name="sourceAnchor" value="223,688"/>
+				<property name="targetAnchor" value="223,708"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.DocumentDataSource">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="321,176,156,55"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Document">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="299,360,131,53"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.Document:lnkContent">
+				<property name="sourceAnchor" value="298,386"/>
+				<property name="targetAnchor" value="287,386"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:org.pdfbox.util.PDFTextStripper">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="321,780,170,51"/>
+			<property name="collapsedCompartments" value="Property"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:bin:org.pdfbox.util.PDFTextStripper:document">
+				<property name="sourceAnchor" value="321,813"/>
+				<property name="targetAnchor" value="291,813"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,80,124,51"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.pdflibimpl.PdfBoxFactory:DocumentFactory">
+				<property name="sourceAnchor" value="134,105"/>
+				<property name="targetAnchor" value="160,105"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTestCase">
+			<property name="bounds" value="10,230,171,49"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTestCase:pdfTester">
+				<property name="sourceAnchor" value="170,230"/>
+				<property name="targetAnchor" value="170,211"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.oio.jpdfunit.PdfTestCase.setUp:setUp">
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentTestCase:TestCase">
+				<property name="sourceAnchor" value="80,279"/>
+				<property name="targetAnchor" value="80,320"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTestCase:tester">
+				<property name="sourceAnchor" value="170,230"/>
+				<property name="targetAnchor" value="170,211"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.oio.jpdfunit.PdfTestCase.field1">
+				<property name="bounds" value="830,292,0,0"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTester">
+			<property name="bounds" value="160,151,144,60"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.DocumentTester:DocumentAssertion">
+				<property name="sourceAnchor" value="304,151"/>
+				<property name="targetAnchor" value="353,131"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.PdfTester:document">
+				<property name="sourceAnchor" value="303,211"/>
+				<property name="targetAnchor" value="303,290"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.PdfTester:content">
+				<property name="sourceAnchor" value="225,211"/>
+				<property name="targetAnchor" value="225,291"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.PdfTester:factory">
+				<property name="sourceAnchor" value="232,151"/>
+				<property name="targetAnchor" value="232,131"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:factory">
+				<property name="sourceAnchor" value="240,151"/>
+				<property name="targetAnchor" value="240,131"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.PdfTester:DocumentAssertion">
+				<property name="sourceAnchor" value="302,151"/>
+				<property name="targetAnchor" value="349,131"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:document">
+				<property name="sourceAnchor" value="301,211"/>
+				<property name="targetAnchor" value="301,360"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.DocumentTester:content">
+				<property name="sourceAnchor" value="223,211"/>
+				<property name="targetAnchor" value="223,361"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Content">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="156,361,131,52"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.ContainsTextSearcher">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="505,720,158,39"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.ContainsTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="534,720"/>
+				<property name="targetAnchor" value="534,674"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.PdfDataSource">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="510,176,142,39"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.PdfDataSource:DocumentDataSource">
+				<property name="sourceAnchor" value="510,195"/>
+				<property name="targetAnchor" value="477,195"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentAssertion">
+			<property name="bounds" value="339,80,144,51"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentAssertion:MetaDataAssertion">
+				<property name="sourceAnchor" value="483,89"/>
+				<property name="targetAnchor" value="510,89"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentAssertion:ContentAssertion">
+				<property name="sourceAnchor" value="483,119"/>
+				<property name="targetAnchor" value="510,119"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

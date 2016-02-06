@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9ea6vjfpy-iyoist">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<property name="bounds" value="-5,-5,919,706"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.RegexpTextSearcher">
+			<property name="bounds" value="191,106,152,56"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.RegexpTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="267,162"/>
+				<property name="targetAnchor" value="506,629"/>
+				<property name="bendpoints" value="267,301,506,301"/>
+				<property name="smooth_bendpoints" value="267,301,506,301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.DocumentType">
+			<property name="bounds" value="290,10,200,123"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.DocumentType:PDFDOCUMENTHANDLER">
+				<property name="sourceAnchor" value="490,129"/>
+				<property name="targetAnchor" value="486,133"/>
+				<property name="bendpoints" value="519,129,519,162,486,162"/>
+				<property name="smooth_bendpoints" value="519,129,519,162,486,162"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.DocumentType:PDFDOCUMENT">
+				<property name="sourceAnchor" value="490,129"/>
+				<property name="targetAnchor" value="486,133"/>
+				<property name="bendpoints" value="519,129,519,162,486,162"/>
+				<property name="smooth_bendpoints" value="519,129,519,162,486,162"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.DocumentDataSource">
+			<property name="bounds" value="1726,10,156,98"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.ContentType">
+			<property name="bounds" value="20,280,200,123"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.ContentType:PDFCONTENTHANDER">
+				<property name="sourceAnchor" value="220,431"/>
+				<property name="targetAnchor" value="216,435"/>
+				<property name="bendpoints" value="249,431,249,464,216,464"/>
+				<property name="smooth_bendpoints" value="249,431,249,464,216,464"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.DocumentType:PDFCONTENTHANDER">
+				<property name="sourceAnchor" value="240,161"/>
+				<property name="targetAnchor" value="236,165"/>
+				<property name="bendpoints" value="269,161,269,194,236,194"/>
+				<property name="smooth_bendpoints" value="269,161,269,194,236,194"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.ContentType:PDFCONTENT">
+				<property name="sourceAnchor" value="220,399"/>
+				<property name="targetAnchor" value="216,403"/>
+				<property name="bendpoints" value="249,399,249,432,216,432"/>
+				<property name="smooth_bendpoints" value="249,399,249,432,216,432"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.EqualsTextSearcher">
+			<property name="bounds" value="255,637,145,56"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.EqualsTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="400,650"/>
+				<property name="targetAnchor" value="480,650"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.TextSearcher">
+			<property name="bounds" value="480,629,109,72"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.StartsWithTextSearcher">
+			<property name="bounds" value="363,106,170,85"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.StartsWithTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="520,191"/>
+				<property name="targetAnchor" value="520,629"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.WordTextSearcher">
+			<property name="bounds" value="553,106,139,85"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.WordTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="622,191"/>
+				<property name="targetAnchor" value="537,629"/>
+				<property name="bendpoints" value="622,288,537,288"/>
+				<property name="smooth_bendpoints" value="622,288,537,288"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.ContainsTextSearcher">
+			<property name="bounds" value="712,106,158,56"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.ContainsTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="791,162"/>
+				<property name="targetAnchor" value="554,629"/>
+				<property name="bendpoints" value="791,433,554,433"/>
+				<property name="smooth_bendpoints" value="791,433,554,433"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.TextSearchType">
+			<property name="bounds" value="890,10,125,205"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:CONTAINS">
+				<property name="sourceAnchor" value="1015,203"/>
+				<property name="targetAnchor" value="1003,215"/>
+				<property name="bendpoints" value="1052,203,1052,252,1003,252"/>
+				<property name="smooth_bendpoints" value="1052,203,1052,252,1003,252"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchEnum:EQUALS">
+				<property name="sourceAnchor" value="730,213"/>
+				<property name="targetAnchor" value="714,229"/>
+				<property name="bendpoints" value="771,213,771,270,714,270"/>
+				<property name="smooth_bendpoints" value="771,213,771,270,714,270"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchEnum:ENDSWITH">
+				<property name="sourceAnchor" value="730,209"/>
+				<property name="targetAnchor" value="710,229"/>
+				<property name="bendpoints" value="775,209,775,274,710,274"/>
+				<property name="smooth_bendpoints" value="775,209,775,274,710,274"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchEnum:REGEXP">
+				<property name="sourceAnchor" value="730,217"/>
+				<property name="targetAnchor" value="718,229"/>
+				<property name="bendpoints" value="767,217,767,266,718,266"/>
+				<property name="smooth_bendpoints" value="767,217,767,266,718,266"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchEnum:CONTAINS">
+				<property name="sourceAnchor" value="730,221"/>
+				<property name="targetAnchor" value="722,229"/>
+				<property name="bendpoints" value="763,221,763,262,722,262"/>
+				<property name="smooth_bendpoints" value="763,221,763,262,722,262"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:ENDSWITH">
+				<property name="sourceAnchor" value="1015,199"/>
+				<property name="targetAnchor" value="999,215"/>
+				<property name="bendpoints" value="1056,199,1056,256,999,256"/>
+				<property name="smooth_bendpoints" value="1056,199,1056,256,999,256"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:WORD">
+				<property name="sourceAnchor" value="1015,211"/>
+				<property name="targetAnchor" value="1011,215"/>
+				<property name="bendpoints" value="1044,211,1044,244,1011,244"/>
+				<property name="smooth_bendpoints" value="1044,211,1044,244,1011,244"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:EQUALS">
+				<property name="sourceAnchor" value="1015,191"/>
+				<property name="targetAnchor" value="991,215"/>
+				<property name="bendpoints" value="1064,191,1064,264,991,264"/>
+				<property name="smooth_bendpoints" value="1064,191,1064,264,991,264"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:REGEXP">
+				<property name="sourceAnchor" value="1015,195"/>
+				<property name="targetAnchor" value="995,215"/>
+				<property name="bendpoints" value="1060,195,1060,260,995,260"/>
+				<property name="smooth_bendpoints" value="1060,195,1060,260,995,260"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:STARTSWITH">
+				<property name="sourceAnchor" value="1015,207"/>
+				<property name="targetAnchor" value="1007,215"/>
+				<property name="bendpoints" value="1048,207,1048,248,1007,248"/>
+				<property name="smooth_bendpoints" value="1048,207,1048,248,1007,248"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchEnum:STARTSWITH">
+				<property name="sourceAnchor" value="730,225"/>
+				<property name="targetAnchor" value="726,229"/>
+				<property name="bendpoints" value="759,225,759,258,726,258"/>
+				<property name="smooth_bendpoints" value="759,225,759,258,726,258"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.util.TextSearchType:searcher">
+				<property name="sourceAnchor" value="900,215"/>
+				<property name="targetAnchor" value="571,629"/>
+				<property name="bendpoints" value="900,579,571,579"/>
+				<property name="smooth_bendpoints" value="900,579,571,579"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.EndsWithTextSearcher">
+			<property name="bounds" value="10,106,161,85"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.EndsWithTextSearcher:TextSearcher">
+				<property name="sourceAnchor" value="90,191"/>
+				<property name="targetAnchor" value="493,629"/>
+				<property name="bendpoints" value="90,460,493,460"/>
+				<property name="smooth_bendpoints" value="90,460,493,460"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.util.PdfDataSource">
+			<property name="bounds" value="1530,18,116,153"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.util.PdfDataSource:DocumentDataSource">
+				<property name="sourceAnchor" value="1646,31"/>
+				<property name="targetAnchor" value="1726,31"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

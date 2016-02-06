@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeasaechc-io0tlv">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.DocumentTestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="170,61,231,372"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.DocumentTestCase:TestCase">
+				<property name="sourceAnchor" value="170,102"/>
+				<property name="targetAnchor" value="130,102"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.OioTest">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="460,61,171,150"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.test.jpdfunit.examples.OioTest:DocumentTestCase">
+				<property name="sourceAnchor" value="460,136"/>
+				<property name="targetAnchor" value="401,136"/>
+			</reference>
+			<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.OioTest">
+				<property name="sourceAnchor" value="460,136"/>
+				<property name="targetAnchor" value="401,136"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:bin:junit.framework.TestCase">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,70,120,91"/>
+			<property name="hideAll" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

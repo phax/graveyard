@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eas6el2l-ltm82v">
+		<property name="$parentUin" value="jdt:e_jar_package:bin:org.pdfbox.util"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+	</view>
+</nodeSet>

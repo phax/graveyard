@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9ea2du5v0s4jerc">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.ContentHandler">
+			<property name="bounds" value="20,830,200,235"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.ContentHandler:content">
+				<property name="sourceAnchor" value="220,910"/>
+				<property name="targetAnchor" value="520,910"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.ContentHandler:adaptee">
+				<property name="sourceAnchor" value="220,902"/>
+				<property name="targetAnchor" value="520,902"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.ContentHandler:Content">
+				<property name="sourceAnchor" value="120,830"/>
+				<property name="targetAnchor" value="120,775"/>
+			</reference>
+		</reference>
+		<reference referencedUin="pattern:Adapter::de.oio.jpdfunit.document.ContentHandler">
+			<property name="bounds" value="309,620,411,111"/>
+			<property name="collapsedCompartments" value=""/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.ContentHandler:adapter">
+				<property name="sourceAnchor" value="433,731"/>
+				<property name="targetAnchor" value="220,877"/>
+			</reference>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.ContentHandler:target">
+				<property name="sourceAnchor" value="309,675"/>
+				<property name="targetAnchor" value="220,675"/>
+			</reference>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.ContentHandler:adaptee">
+				<property name="sourceAnchor" value="620,731"/>
+				<property name="targetAnchor" value="620,830"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PDFDocument">
+			<property name="bounds" value="800,0,321,376"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PdfBoxFactory">
+			<property name="bounds" value="430,1,114,27"/>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.PdfBoxFactory:DocumentFactory">
+				<property name="sourceAnchor" value="430,14"/>
+				<property name="targetAnchor" value="411,14"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentHandler">
+			<property name="bounds" value="378,2,291,371"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.DocumentHandler:adaptee">
+				<property name="sourceAnchor" value="669,179"/>
+				<property name="targetAnchor" value="800,179"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.DocumentHandler:document">
+				<property name="sourceAnchor" value="669,187"/>
+				<property name="targetAnchor" value="800,187"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.DocumentHandler:Document">
+				<property name="sourceAnchor" value="378,134"/>
+				<property name="targetAnchor" value="261,134"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PdfBoxDocumentAdapter">
+			<property name="bounds" value="430,47,173,56"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.PdfBoxDocumentAdapter:content">
+				<property name="sourceAnchor" value="499,103"/>
+				<property name="targetAnchor" value="250,540"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PdfBoxDocumentAdapter:Document">
+				<property name="sourceAnchor" value="482,103"/>
+				<property name="targetAnchor" value="411,159"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PdfBoxDocumentHandler:Document">
+				<property name="sourceAnchor" value="477,103"/>
+				<property name="targetAnchor" value="411,151"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.PdfBoxDocumentHandler:content">
+				<property name="sourceAnchor" value="499,103"/>
+				<property name="targetAnchor" value="249,540"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PDFBoxDocumentHandler">
+			<property name="bounds" value="570,0,311,381"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.PDFBoxDocumentHandler:content">
+				<property name="sourceAnchor" value="570,306"/>
+				<property name="targetAnchor" value="292,540"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PDFDocumentHandler:Document">
+				<property name="sourceAnchor" value="500,220"/>
+				<property name="targetAnchor" value="411,220"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.PDFDocumentHandler:DocumentFactory">
+				<property name="sourceAnchor" value="500,50"/>
+				<property name="targetAnchor" value="411,50"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PDFBoxDocumentHandler:Document">
+				<property name="sourceAnchor" value="570,240"/>
+				<property name="targetAnchor" value="411,240"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.oio.jpdfunit.document.PDFDocumentHandler:content">
+				<property name="sourceAnchor" value="655,351"/>
+				<property name="targetAnchor" value="655,619"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9ea6vjfpydc2z47">
+			<property name="bounds" value="10,110,106,76"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Document">
+			<property name="bounds" value="130,130,281,291"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9ea6vjfpy-iyoist">
+			<property name="bounds" value="10,210,106,121"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PDFContent">
+			<property name="bounds" value="520,830,200,232"/>
+		</reference>
+		<reference referencedUin="pattern:Adapter::de.oio.jpdfunit.document.DocumentHandler">
+			<property name="bounds" value="330,440,329,115"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.DocumentHandler:target">
+				<property name="sourceAnchor" value="437,440"/>
+				<property name="targetAnchor" value="261,260"/>
+			</reference>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.DocumentHandler:adaptee">
+				<property name="sourceAnchor" value="579,440"/>
+				<property name="targetAnchor" value="800,293"/>
+			</reference>
+			<reference referencedUin="patternParticipant:Adapter:de.oio.jpdfunit.document.DocumentHandler:adapter">
+				<property name="sourceAnchor" value="518,440"/>
+				<property name="targetAnchor" value="518,373"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.Content">
+			<property name="bounds" value="10,540,401,141"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PdfBoxContentAdapter">
+			<property name="bounds" value="430,93,160,27"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PdfBoxContentHandler:Content">
+				<property name="sourceAnchor" value="501,120"/>
+				<property name="targetAnchor" value="251,540"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PdfBoxContentAdapter:Content">
+				<property name="sourceAnchor" value="501,120"/>
+				<property name="targetAnchor" value="251,540"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactory">
+			<property name="bounds" value="10,0,401,101"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.DocumentFactoryException">
+			<property name="bounds" value="430,1,188,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.jpdfunit.document.PDfBoxContentHandler">
+			<property name="bounds" value="480,540,401,231"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PDfBoxContentHandler:Content">
+				<property name="sourceAnchor" value="480,610"/>
+				<property name="targetAnchor" value="411,610"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:de.oio.jpdfunit.document.PDfContentHandler:Content">
+				<property name="sourceAnchor" value="490,801"/>
+				<property name="targetAnchor" value="411,801"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.PDfContentHandler:Content">
+				<property name="sourceAnchor" value="580,359"/>
+				<property name="targetAnchor" value="210,359"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.oio.jpdfunit.document.PDfContentHandler:ContentFactory">
+				<property name="sourceAnchor" value="490,650"/>
+				<property name="targetAnchor" value="411,650"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

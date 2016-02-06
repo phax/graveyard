@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="N-w2q8ptebanjidqmeyq48">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="PdfBoxFactory"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebanjw0m-sbq0gd:N-w2q8ptebanfm5di24c0m"/>
+		<link uin="L-jj7sjxebao3kvfly5j94">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new PdfBoxDocumentAdapter"/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebanjw0m-sbq0gd:N-w2q8ptebanfm5di24c0m"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebao3kvf8lbn45:N-w2q8ptebao0qeb-fbhqbt"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanjidqmeyq48" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebao3kvfofawli">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanjidqmeyq48" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebanjw0m-ot3y4k">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebanjw0m-sbq0gd:N-w2q8ptebanfm5di24c0m"/>
+			<link uin="L20s162ebao579xu6lrip">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="0.7"/>
+				<participant referencedUin="design:node:::N-4aytaiebanjw0m-ot3y4k:N-w2q8ptebanjidqmeyq48" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebanjidqmeyq48" role="Supplier">
+				</participant>
+			</link>
+		</node>
+	</node>
+	<node uin="N-w2q8pteband6be-eir5pj">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="MyTestCase"/>
+		<link uin="L1b7x3iebdpdi3k-29zx8o">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link2"/>
+			<participant referencedUin="design:node:::N-w2q8pteband6be-eir5pj" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebdpdi3kb4m10d">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new DocumentTester"/>
+			<property name="normalizedIndex" value="0.6666667"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebanfzbcriv6tk:N-w2q8ptebanfm5di24c0m"/>
+			<participant referencedUin="design:node:::N-w2q8pteband6be-eir5pj" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebaobiay-a39yfa">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="PdfBoxAnalyser"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebaobug09b7ohl:N-w2q8ptebao0qeb-fbhqbt"/>
+		<node uin="N-4aytaiebaobuggdszopu">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebaobug09b7ohl:N-w2q8ptebao0qeb-fbhqbt"/>
+			<link uin="L20s162ebaoc4o3-jkdmg0">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="1.0"/>
+				<participant referencedUin="design:node:::N-4aytaiebaobuggdszopu:N-w2q8ptebaobiay-a39yfa" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebaobiay-a39yfa" role="Supplier">
+				</participant>
+			</link>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebao0qeb-fbhqbt">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="PdfBoxDocumentAdapter"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebao3kvfly5j94:N-w2q8ptebanjidqmeyq48;design:link:::L-jj7sjxebaod6y6-dsx397:N-w2q8ptebanfm5di24c0m"/>
+		<link uin="L1b7x3iebaobug0pi0my1">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebaobiay-a39yfa" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebao3kvf8lbn45">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebao3kvfly5j94:N-w2q8ptebanjidqmeyq48"/>
+			<link uin="L20s162ebao4kyybx5ic8">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="0.3"/>
+				<participant referencedUin="design:node:::N-4aytaiebao3kvf8lbn45:N-w2q8ptebao0qeb-fbhqbt" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+				</participant>
+			</link>
+		</node>
+		<node uin="N-4aytaiebaod6yl9gokeu">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation2"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebaod6y6-dsx397:N-w2q8ptebanfm5di24c0m"/>
+			<link uin="L20s162ebaodht8196ysr">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="1.0"/>
+				<participant referencedUin="design:node:::N-4aytaiebaod6yl9gokeu:N-w2q8ptebao0qeb-fbhqbt" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+				</participant>
+			</link>
+		</node>
+		<link uin="L-jj7sjxebaoc9543a60gb">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new PdfBoxContentHandler"/>
+			<property name="normalizedIndex" value="0.6666667"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebao3kvfly5j94:N-w2q8ptebanjidqmeyq48"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebaoc95k-g601kb:N-w2q8ptebao8fv4-6zfw5j"/>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao8fv4-6zfw5j" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebaobug09b7ohl">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new PdfBoxAnalyer"/>
+			<property name="normalizedIndex" value="0.33333334"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebao3kvfly5j94:N-w2q8ptebanjidqmeyq48"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebaobuggdszopu:N-w2q8ptebaobiay-a39yfa"/>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebaobiay-a39yfa" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebaoc954-3kkzwp">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link2"/>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao8fv4-6zfw5j" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebanh2wru27b5y">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="DocumentFactory"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebanhd64mg6mkm:N-w2q8ptebanfm5di24c0m"/>
+		<link uin="L1b7x3iebaniba0dq9sex">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanh2wru27b5y" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebanhd6k-x7ketw">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebanhd64mg6mkm:N-w2q8ptebanfm5di24c0m"/>
+			<link uin="L20s162ebao4v5qcnslal">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="0.3"/>
+				<participant referencedUin="design:node:::N-4aytaiebanhd6k-x7ketw:N-w2q8ptebanh2wru27b5y" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebanh2wru27b5y" role="Supplier">
+				</participant>
+			</link>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebao8fv4-6zfw5j">
+		<property name="$metaclass" value="Object"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebaoc9543a60gb:N-w2q8ptebao0qeb-fbhqbt"/>
+		<property name="$name" value="PdfBoxContentAdapter"/>
+		<node uin="N-4aytaiebaoc95k-g601kb">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebaoc9543a60gb:N-w2q8ptebao0qeb-fbhqbt"/>
+			<link uin="L20s162ebaocqar-11jouh">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="1.0"/>
+				<participant referencedUin="design:node:::N-4aytaiebaoc95k-g601kb:N-w2q8ptebao8fv4-6zfw5j" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebao8fv4-6zfw5j" role="Supplier">
+				</participant>
+			</link>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebanfm5di24c0m">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="DocumentTester"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebdpdi3kb4m10d:N-w2q8pteband6be-eir5pj"/>
+		<node uin="N-4aytaiebanfzbcriv6tk">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebdpdi3kb4m10d:N-w2q8pteband6be-eir5pj"/>
+			<link uin="L20s162ebaoec5qr7duz0">
+				<property name="$metaclass" value="Return Link"/>
+				<property name="$name" value="Return Link1"/>
+				<property name="normalizedIndex" value="0.8509317"/>
+				<participant referencedUin="design:node:::N-4aytaiebanfzbcriv6tk:N-w2q8ptebanfm5di24c0m" role="Client">
+				</participant>
+				<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Supplier">
+				</participant>
+			</link>
+		</node>
+		<link uin="L-jj7sjxebaod6y6-dsx397">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="getContent"/>
+			<property name="normalizedIndex" value="0.75"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebdpdi3kb4m10d:N-w2q8pteband6be-eir5pj"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebaod6yl9gokeu:N-w2q8ptebao0qeb-fbhqbt"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebaod6y63jk3dj">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link3"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebao0qeb-fbhqbt" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebanjw0m7wxc47">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link2"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanjidqmeyq48" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebanhd64mg6mkm">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="getInstance"/>
+			<property name="normalizedIndex" value="0.25"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebdpdi3kb4m10d:N-w2q8pteband6be-eir5pj"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebanhd6k-x7ketw:N-w2q8ptebanh2wru27b5y"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanh2wru27b5y" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebanjw0m-sbq0gd">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="getDocument"/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebdpdi3kb4m10d:N-w2q8pteband6be-eir5pj"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebanjw0m-ot3y4k:N-w2q8ptebanjidqmeyq48"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanjidqmeyq48" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebanhd64i2x95d">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebanfm5di24c0m" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebanh2wru27b5y" role="Supplier">
+			</participant>
+		</link>
+	</node>
+</nodeSet>

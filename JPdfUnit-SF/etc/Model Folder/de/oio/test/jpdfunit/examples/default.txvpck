@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eb3ja867-ka5f02">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.GenerelDocumentTest">
+			<property name="bounds" value="222,2,159,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.DocumentInformationTest">
+			<property name="bounds" value="20,20,183,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.OioTest">
+			<property name="bounds" value="20,70,102,40"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.TesterWorks">
+			<property name="bounds" value="222,61,105,27"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.oio.test.jpdfunit.examples.AllTests">
+			<property name="bounds" value="105,70,77,27"/>
+		</reference>
+	</view>
+</nodeSet>
