@@ -16,13 +16,12 @@
  */
 package com.helger.as4lib.model.pmode;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.ValueEnforcer;
+import com.helger.commons.collection.ext.CommonsLinkedHashMap;
+import com.helger.commons.collection.ext.ICommonsOrderedMap;
 
 /**
  * Business information - This set of parameters only applies to user messages.
@@ -48,13 +47,13 @@ public class PModeLegBusinessInformation
   /**
    * The value of this parameter is a list of properties.
    */
-  private final Map <String, PModeProperty> m_aProperties = new LinkedHashMap <String, PModeProperty> ();
+  private final ICommonsOrderedMap <String, PModeProperty> m_aProperties = new CommonsLinkedHashMap<> ();
 
   /**
    * This parameter allows for specifying some constraint or profile on the
    * payload. It specifies a list of payload parts.
    */
-  private final Map <String, PModePayloadProfile> m_aPayloadProfile = new LinkedHashMap <String, PModePayloadProfile> ();
+  private final ICommonsOrderedMap <String, PModePayloadProfile> m_aPayloadProfile = new CommonsLinkedHashMap<> ();
 
   /**
    * This parameter allows for specifying a maximum size in kilobytes for the

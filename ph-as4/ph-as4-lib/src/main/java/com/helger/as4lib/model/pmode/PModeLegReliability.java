@@ -16,9 +16,8 @@
  */
 package com.helger.as4lib.model.pmode;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.helger.commons.collection.ext.CommonsArrayList;
+import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.state.ETriState;
 
 public class PModeLegReliability
@@ -28,7 +27,8 @@ public class PModeLegReliability
    * reliability contract (see Section 8.2.2) is to be used between MSH and
    * Consumer (Guaranteed Delivery). It also indicates that this contract
    * applies to ebMS signals (see Section 8.2.1) (e.g. PullRequest) between the
-   * receiving reliability module and the next MSH component (e.g. RM-Consumer).<br/>
+   * receiving reliability module and the next MSH component (e.g. RM-Consumer).
+   * <br/>
    */
   private final ETriState m_eAtLeastOnceContract = ETriState.UNDEFINED;
   /**
@@ -110,7 +110,7 @@ public class PModeLegReliability
    * associated with the values in Reliability.Correlation for a message under
    * this P-Mode, then a new group/sequence is started.
    */
-  private final List <String> m_aCorrelation = new ArrayList <String> ();
+  private final ICommonsList <String> m_aCorrelation = new CommonsArrayList<> ();
 
   /**
    * This parameter is a Boolean value that may be used to indicate if messages

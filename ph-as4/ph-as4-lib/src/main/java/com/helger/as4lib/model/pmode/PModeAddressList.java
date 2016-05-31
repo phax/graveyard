@@ -16,9 +16,7 @@
  */
 package com.helger.as4lib.model.pmode;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -27,14 +25,15 @@ import javax.annotation.Nullable;
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.annotation.ReturnsMutableCopy;
-import com.helger.commons.collection.CollectionHelper;
+import com.helger.commons.collection.ext.CommonsArrayList;
+import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.string.StringHelper;
 
 public class PModeAddressList
 {
   public static final char ADDRESS_SEPARATOR = ',';
 
-  private final List <String> m_aAddresses = new ArrayList <String> ();
+  private final ICommonsList <String> m_aAddresses = new CommonsArrayList<> ();
 
   public PModeAddressList ()
   {}
@@ -70,9 +69,9 @@ public class PModeAddressList
 
   @Nonnull
   @ReturnsMutableCopy
-  public List <String> getAllAddresses ()
+  public ICommonsList <String> getAllAddresses ()
   {
-    return CollectionHelper.newList (m_aAddresses);
+    return m_aAddresses.getClone ();
   }
 
   @Nonnegative
@@ -99,7 +98,7 @@ public class PModeAddressList
   @Nonnull
   public static PModeAddressList createFromString (@Nullable final String sAddressString)
   {
-    final List <String> aAddresses = StringHelper.getExploded (ADDRESS_SEPARATOR, sAddressString);
+    final ICommonsList <String> aAddresses = StringHelper.getExploded (ADDRESS_SEPARATOR, sAddressString);
     return new PModeAddressList (aAddresses);
   }
 }
