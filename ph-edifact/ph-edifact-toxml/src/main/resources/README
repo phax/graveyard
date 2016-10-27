@@ -1,0 +1,11 @@
+EDIFACT to XML conversion
+=========================
+
+Very simplistic EDIFACT parser enabling easy transformation of the EDIFACT structure to XML.
+
+Usage:
+
+	java -jar edifact-to-xml.jar edifact-file
+       
+Features are kept at a minimum since the main intent of the transformation is to do further 
+processing using XSLT.
