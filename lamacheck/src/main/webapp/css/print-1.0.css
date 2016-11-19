@@ -1,0 +1,40 @@
+/**
+ * Copyright (C) 2011-2014 Philip Helger <philip[at]helger[dot]com>
+ * All Rights Reserved
+ *
+ * This file is part of the LaMaCheck service.
+ *
+ * Proprietary and confidential.
+ *
+ * It can not be copied and/or distributed without the
+ * express permission of Philip Helger.
+ *
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ */
+#header,
+#navbar,
+#left,
+#menu,
+#special,
+#content .toolbar {
+  display:none !important;
+}
+
+#viewport {
+  top: 0px !important;
+}
+
+#content {
+  left: 3px !important;
+  padding: 0px !important;
+}
+
+table.form_table tr td {
+  border:1px solid black;
+}
+
+h1 {
+  border:2px solid #5F88B6;
+  color: #5F88B6;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2011-2014 Philip Helger <philip[at]helger[dot]com>
+    All Rights Reserved
+
+    This file is part of the LaMaCheck service.
+
+    Proprietary and confidential.
+
+    It can not be copied and/or distributed without the
+    express permission of Philip Helger.
+
+    Unauthorized copying of this file, via any medium is
+    strictly prohibited.
+
+-->
+<metadata modelVersion="1.1.0">
+  <groupId>com.sun.faces</groupId>
+  <artifactId>jsf-impl</artifactId>
+  <version>2.2.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20130406.074538</timestamp>
+      <buildNumber>8</buildNumber>
+    </snapshot>
+    <lastUpdated>20130406162119</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>2.2.1-20130406.074538-8</value>
+        <updated>20130406074538</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>2.2.1-20130406.074538-8</value>
+        <updated>20130406074538</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>2.2.1-20130406.074538-8</value>
+        <updated>20130406074538</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.2.1-20130406.074538-8</value>
+        <updated>20130406074538</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

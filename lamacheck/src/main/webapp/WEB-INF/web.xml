@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2011-2014 Philip Helger <philip[at]helger[dot]com>
+    All Rights Reserved
+
+    This file is part of the LaMaCheck service.
+
+    Proprietary and confidential.
+
+    It can not be copied and/or distributed without the
+    express permission of Philip Helger.
+
+    Unauthorized copying of this file, via any medium is
+    strictly prohibited.
+
+-->
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>LaMaCheck</display-name>
+  <description>Latest Maven artifact checker</description>
+  <context-param>
+    <description>Where to store data.</description>
+    <param-name>dataPath</param-name>
+    <param-value>/svn-philip/dev/lamadata</param-value>
+  </context-param>
+  <context-param>
+    <param-name>noCheckFileAccess</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <description>Turn on only in production system.</description>
+    <param-name>production</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <description>Enable global debugging. Turn off in production</description>
+    <param-name>debug</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>serverUrl</param-name>
+    <param-value>http://localhost</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  
+  <!-- The welcome file is only required for the initial redirect -->
+  <welcome-file-list>
+    <welcome-file>public</welcome-file>
+  </welcome-file-list>
+  
+  <listener>
+    <listener-class>com.helger.lamaweb.servlet.LamaWebAppListener</listener-class>
+  </listener>
+  
+  <filter>
+    <filter-name>LamaConfigLoginFilter</filter-name>
+    <filter-class>com.helger.lamaweb.servlet.LamaConfigLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LamaConfigLoginFilter</filter-name>
+    <url-pattern>/secure/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LamaConfigLoginFilter</filter-name>
+    <url-pattern>/secureajax/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>LamaConfigApplicationServlet</servlet-name>
+    <servlet-class>com.helger.lamaweb.servlet.LamaConfigApplicationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LamaConfigApplicationServlet</servlet-name>
+    <url-pattern>/secure/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LamaViewApplicationServlet</servlet-name>
+    <servlet-class>com.helger.lamaweb.servlet.LamaViewApplicationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LamaViewApplicationServlet</servlet-name>
+    <url-pattern>/public/*</url-pattern>
+  </servlet-mapping>
+</web-app>

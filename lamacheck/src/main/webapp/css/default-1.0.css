@@ -1,0 +1,63 @@
+/**
+ * Copyright (C) 2011-2014 Philip Helger <philip[at]helger[dot]com>
+ * All Rights Reserved
+ *
+ * This file is part of the LaMaCheck service.
+ *
+ * Proprietary and confidential.
+ *
+ * It can not be copied and/or distributed without the
+ * express permission of Philip Helger.
+ *
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ */
+.container {
+  width:98%;
+}
+
+/* Menu styleing */
+#menu .nav>li>a {
+  color: #716B7A;
+  display: block;
+  padding: 5px 5px;
+}
+
+#menu .nav>.active>a,
+#menu .nav>.active:hover>a,
+#menu .nav>.active:focus>a {
+  background-color: rgba(0, 0, 0, 0);
+  border-right: 1px solid #428BCA;
+  color: #428BCA;
+  font-weight: bold;
+}
+
+#menu .nav .nav>li>a {
+  font-size: 90%;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
+#menu .nav .nav .nav>li>a {
+  padding-left: 25px;
+}
+
+/* Remove margin from content tables */ 
+#viewport table
+{
+  margin-bottom: 0 !important;
+}
+
+#footer {
+  display: block;
+  background-color: #F5F5F5;
+  border-top: 1px solid #E5E5E5;
+  margin-top: 70px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline;
+}
