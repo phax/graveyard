@@ -16,48 +16,48 @@
 
 package de.oio.test.jpdfunit;
 
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 import de.oio.jpdfunit.DocumentTester;
-import junit.framework.AssertionFailedError;
-import junit.framework.TestCase;
 
 /**
  * @author bbratkus TODO To change the template for this generated type comment
  *         go to Window - Preferences - Java - Code Style - Code Templates
  */
-public class PdfTesterBookmarkTest extends TestCase
+public class PdfTesterBookmarkTest
 {
   DocumentTester tester;
 
-  public PdfTesterBookmarkTest ()
-  {}
-
-  public PdfTesterBookmarkTest (final String name)
-  {
-    super (name);
-  }
-
-  @Override
-  protected void setUp () throws Exception
+  @Before
+  public void setUp ()
   {
     tester = new DocumentTester ("etc/testing-pdfs/bookMarkTest.pdf");
   }
 
-  @Override
-  protected void tearDown () throws Exception
+  @After
+  public void tearDown ()
   {
     tester.close ();
   }
 
+  @Test
   public void test_numberOfBookmarks ()
   {
     tester.assertNumberOfBookmarks (1);
   }
 
+  @Test
   public void test_bookmarkExists ()
   {
     tester.assertBookmarkExists ("CID");
   }
 
+  @Test
   public void test_bookmarkNotExists ()
   {
     try
@@ -65,17 +65,19 @@ public class PdfTesterBookmarkTest extends TestCase
       tester.assertBookmarkExists ("UNKNOWN");
       fail ("Bookmark should have failed");
     }
-    catch (final AssertionFailedError e)
+    catch (final AssertionError e)
     {
       assertTrue (true);
     }
   }
 
+  @Test
   public void test_bookmarksAre ()
   {
     tester.assertBookmarksAre (new String [] { "CID" });
   }
 
+  @Test
   public void test_bookmarksArePartial ()
   {
     try
@@ -83,12 +85,13 @@ public class PdfTesterBookmarkTest extends TestCase
       tester.assertBookmarksAre (new String [] { "CID", "PAGE2" });
       fail ("Should Fail two many bookmarks");
     }
-    catch (final AssertionFailedError e)
+    catch (final AssertionError e)
     {
       assertTrue (true);
     }
   }
 
+  @Test
   public void test_bookmarksAreNull ()
   {
     try
@@ -96,12 +99,13 @@ public class PdfTesterBookmarkTest extends TestCase
       tester.assertBookmarksAre (null);
       fail ("Should Fail null");
     }
-    catch (final AssertionFailedError e)
+    catch (final AssertionError e)
     {
       assertTrue (true);
     }
   }
 
+  @Test
   public void test_bookmarksAreNotMatch ()
   {
     try
@@ -109,10 +113,9 @@ public class PdfTesterBookmarkTest extends TestCase
       tester.assertBookmarksAre (new String [] { "PAGE2" });
       fail ("Should Fail not correct bookmarks");
     }
-    catch (final AssertionFailedError e)
+    catch (final AssertionError e)
     {
       assertTrue (true);
     }
   }
-
 }

@@ -16,12 +16,16 @@
 
 package de.oio.jpdfunit;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import java.io.InputStream;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
-
-import org.junit.Assert;
 
 import de.oio.jpdfunit.document.AbstractDocumentFactory;
 import de.oio.jpdfunit.document.IContent;
@@ -102,17 +106,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't contain the expected author name: " +
-                         expected,
-                         m_aDocument.getAuthor ().equals (expected));
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't contain the expected author name: " +
+                  expected,
+                  m_aDocument.getAuthor ().equals (expected));
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't contain the expected author name: " +
-                         expected,
-                         m_aDocument.getAuthor ().equals (expected));
+      assertTrue ("The tested pdf-document doesn't contain the expected author name: " +
+                  expected,
+                  m_aDocument.getAuthor ().equals (expected));
     }
 
   }
@@ -134,17 +138,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't contain the expected parameter: " +
-                         text,
-                         m_aContent.isTextContent (text, type));
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't contain the expected parameter: " +
+                  text,
+                  m_aContent.isTextContent (text, type));
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't contain the expected parameter: " +
-                         text,
-                         m_aContent.isTextContent (text, type));
+      assertTrue ("The tested pdf-document doesn't contain the expected parameter: " +
+                  text,
+                  m_aContent.isTextContent (text, type));
     }
 
   }
@@ -169,23 +173,23 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't contain the expected parameter: " +
-                         text +
-                         " on the actual page (" +
-                         page +
-                         ") .",
-                         m_aContent.isTextContentOnPage (text, type, page));
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't contain the expected parameter: " +
+                  text +
+                  " on the actual page (" +
+                  page +
+                  ") .",
+                  m_aContent.isTextContentOnPage (text, type, page));
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't contain the expected parameter: " +
-                         text +
-                         " on the actual page (" +
-                         page +
-                         ") .",
-                         m_aContent.isTextContentOnPage (text, type, page));
+      assertTrue ("The tested pdf-document doesn't contain the expected parameter: " +
+                  text +
+                  " on the actual page (" +
+                  page +
+                  ") .",
+                  m_aContent.isTextContentOnPage (text, type, page));
     }
 
   }
@@ -209,19 +213,19 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't contain the expected parameters:" +
-                         text +
-                         " in the right way.",
-                         0 < pages.size ());
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't contain the expected parameters:" +
+                  text +
+                  " in the right way.",
+                  0 < pages.size ());
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't contain the expected parameters:" +
-                         text +
-                         " in the right way.",
-                         0 < pages.size ());
+      assertTrue ("The tested pdf-document doesn't contain the expected parameters:" +
+                  text +
+                  " in the right way.",
+                  0 < pages.size ());
     }
 
   }
@@ -243,17 +247,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertFalse (TESTEDDOC +
-                          m_sPFDFFile +
-                          " contains the expected parameter: " +
-                          text,
-                          m_aContent.isTextContent (text, type));
+      assertFalse (TESTEDDOC +
+                   m_sPFDFFile +
+                   " contains the expected parameter: " +
+                   text,
+                   m_aContent.isTextContent (text, type));
     }
     else
     {
-      Assert.assertFalse ("The tested pdf-document contain the expected parameter: " +
-                          text,
-                          m_aContent.isTextContent (text, type));
+      assertFalse ("The tested pdf-document contain the expected parameter: " +
+                   text,
+                   m_aContent.isTextContent (text, type));
     }
 
   }
@@ -277,23 +281,23 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertFalse (TESTEDDOC +
-                          m_sPFDFFile +
-                          " contain the expected parameter: " +
-                          text +
-                          " on the actual page (" +
-                          page +
-                          ") .",
-                          m_aContent.isTextContentOnPage (text, type, page));
+      assertFalse (TESTEDDOC +
+                   m_sPFDFFile +
+                   " contain the expected parameter: " +
+                   text +
+                   " on the actual page (" +
+                   page +
+                   ") .",
+                   m_aContent.isTextContentOnPage (text, type, page));
     }
     else
     {
-      Assert.assertFalse ("The tested pdf-document contains the expected parameter: " +
-                          text +
-                          " on the actual page (" +
-                          page +
-                          ") .",
-                          m_aContent.isTextContentOnPage (text, type, page));
+      assertFalse ("The tested pdf-document contains the expected parameter: " +
+                   text +
+                   " on the actual page (" +
+                   page +
+                   ") .",
+                   m_aContent.isTextContentOnPage (text, type, page));
     }
 
   }
@@ -317,20 +321,20 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertFalse (TESTEDDOC +
-                          m_sPFDFFile +
-                          " contains the expected parameters:" +
-                          text +
-                          " in the right way.",
-                          0 < pages.size ());
+      assertFalse (TESTEDDOC +
+                   m_sPFDFFile +
+                   " contains the expected parameters:" +
+                   text +
+                   " in the right way.",
+                   0 < pages.size ());
       // or 1 < pages.length
     }
     else
     {
-      Assert.assertFalse ("The tested pdf-document contains the expected parameters:" +
-                          text +
-                          " in the right way.",
-                          0 < pages.size ());
+      assertFalse ("The tested pdf-document contains the expected parameters:" +
+                   text +
+                   " in the right way.",
+                   0 < pages.size ());
       // or 1 < pages.length
     }
   }
@@ -346,18 +350,18 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The supposed creator isn't equals to the creator: " +
-                         expected +
-                         " of the pdf file: " +
-                         m_sPFDFFile,
-                         m_aDocument.getCreator ().equals (expected));
+      assertTrue ("The supposed creator isn't equals to the creator: " +
+                  expected +
+                  " of the pdf file: " +
+                  m_sPFDFFile,
+                  m_aDocument.getCreator ().equals (expected));
     }
     else
     {
-      Assert.assertTrue ("The supposed creator isn't equals to the creator: " +
-                         expected +
-                         " of the pdf file",
-                         m_aDocument.getCreator ().equals (expected));
+      assertTrue ("The supposed creator isn't equals to the creator: " +
+                  expected +
+                  " of the pdf file",
+                  m_aDocument.getCreator ().equals (expected));
     }
   }
 
@@ -374,18 +378,18 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The supposed creation date: " +
-                         expected +
-                         " isn't equal to the creation date of the pdf file: " +
-                         m_sPFDFFile,
-                         m_aDocument.getCreationDate ().getTime ().equals (expected.getTime ()));
+      assertTrue ("The supposed creation date: " +
+                  expected +
+                  " isn't equal to the creation date of the pdf file: " +
+                  m_sPFDFFile,
+                  m_aDocument.getCreationDate ().getTime ().equals (expected.getTime ()));
     }
     else
     {
-      Assert.assertTrue ("The supposed creation date: " +
-                         expected +
-                         " isn't equal to the creation date of the pdf file.",
-                         m_aDocument.getCreationDate ().getTime ().equals (expected.getTime ()));
+      assertTrue ("The supposed creation date: " +
+                  expected +
+                  " isn't equal to the creation date of the pdf file.",
+                  m_aDocument.getCreationDate ().getTime ().equals (expected.getTime ()));
     }
   }
 
@@ -402,17 +406,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertNotNull ("Can not decrypt the document: " +
-                            m_sPFDFFile +
-                            " with the supposed owner password: " +
-                            expected,
-                            m_aDocument.decryptDocument (expected));
+      assertNotNull ("Can not decrypt the document: " +
+                     m_sPFDFFile +
+                     " with the supposed owner password: " +
+                     expected,
+                     m_aDocument.decryptDocument (expected));
     }
     else
     {
-      Assert.assertNotNull ("Can not decrypt the document with the supposed owner password: " +
-                            expected,
-                            m_aDocument.decryptDocument (expected));
+      assertNotNull ("Can not decrypt the document with the supposed owner password: " +
+                     expected,
+                     m_aDocument.decryptDocument (expected));
     }
   }
 
@@ -429,17 +433,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertNotNull ("Can not decrypt the document: " +
-                            m_sPFDFFile +
-                            " with the supposed user password: " +
-                            expected,
-                            m_aDocument.decryptDocument (expected));
+      assertNotNull ("Can not decrypt the document: " +
+                     m_sPFDFFile +
+                     " with the supposed user password: " +
+                     expected,
+                     m_aDocument.decryptDocument (expected));
     }
     else
     {
-      Assert.assertNotNull ("Can not decrypt the document with the supposed user password: " +
-                            expected,
-                            m_aDocument.decryptDocument (expected));
+      assertNotNull ("Can not decrypt the document with the supposed user password: " +
+                     expected,
+                     m_aDocument.decryptDocument (expected));
     }
 
   }
@@ -457,18 +461,18 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The supposed title: " +
-                         expected +
-                         " is not equal to the title of the tested pdf file: " +
-                         m_sPFDFFile,
-                         m_aDocument.getTitle ().equals (expected));
+      assertTrue ("The supposed title: " +
+                  expected +
+                  " is not equal to the title of the tested pdf file: " +
+                  m_sPFDFFile,
+                  m_aDocument.getTitle ().equals (expected));
     }
     else
     {
-      Assert.assertTrue ("The supposed title: " +
-                         expected +
-                         " is not equal to the title of the tested pdf file.",
-                         m_aDocument.getTitle ().equals (expected));
+      assertTrue ("The supposed title: " +
+                  expected +
+                  " is not equal to the title of the tested pdf file.",
+                  m_aDocument.getTitle ().equals (expected));
 
     }
 
@@ -487,18 +491,18 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The supposed encryption length: " +
-                         expected +
-                         "isn't equal to the encryption length of the pdf file: " +
-                         m_sPFDFFile,
-                         m_aDocument.getEnryptionLength () == expected);
+      assertTrue ("The supposed encryption length: " +
+                  expected +
+                  "isn't equal to the encryption length of the pdf file: " +
+                  m_sPFDFFile,
+                  m_aDocument.getEnryptionLength () == expected);
     }
     else
     {
-      Assert.assertTrue ("The supposed encryption length: " +
-                         expected +
-                         "isn't equal to the encryption length of the pdf file",
-                         m_aDocument.getEnryptionLength () == expected);
+      assertTrue ("The supposed encryption length: " +
+                  expected +
+                  "isn't equal to the encryption length of the pdf file",
+                  m_aDocument.getEnryptionLength () == expected);
     }
 
   }
@@ -516,17 +520,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't contain the expected keywords: " +
-                         expected,
-                         m_aDocument.getKeywords ().equals (expected));
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't contain the expected keywords: " +
+                  expected,
+                  m_aDocument.getKeywords ().equals (expected));
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't contain the expected keywords: " +
-                         expected,
-                         m_aDocument.getKeywords ().equals (expected));
+      assertTrue ("The tested pdf-document doesn't contain the expected keywords: " +
+                  expected,
+                  m_aDocument.getKeywords ().equals (expected));
 
     }
 
@@ -547,18 +551,18 @@ public class DocumentTester implements IDocumentAssertion
     final int pages = m_aDocument.countPages ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't match with the expected parameter(page count): " +
-                         expected,
-                         expected == pages);
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't match with the expected parameter(page count): " +
+                  expected,
+                  expected == pages);
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't match with" +
-                         " the expected parameter(page count): " +
-                         expected,
-                         expected == pages);
+      assertTrue ("The tested pdf-document doesn't match with" +
+                  " the expected parameter(page count): " +
+                  expected,
+                  expected == pages);
     }
   }
 
@@ -574,18 +578,18 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't match with the expected parameter(subject): " +
-                         expected,
-                         m_aDocument.getSubject ().equals (expected));
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't match with the expected parameter(subject): " +
+                  expected,
+                  m_aDocument.getSubject ().equals (expected));
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't match with" +
-                         " the expected parameter(subject): " +
-                         expected,
-                         m_aDocument.getSubject ().equals (expected));
+      assertTrue ("The tested pdf-document doesn't match with" +
+                  " the expected parameter(subject): " +
+                  expected,
+                  m_aDocument.getSubject ().equals (expected));
     }
 
   }
@@ -603,18 +607,18 @@ public class DocumentTester implements IDocumentAssertion
   {
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " doesn't match with the expected parameter: " +
-                         expected,
-                         m_aDocument.isDocumentEncrypted () == expected);
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " doesn't match with the expected parameter: " +
+                  expected,
+                  m_aDocument.isDocumentEncrypted () == expected);
     }
     else
     {
-      Assert.assertTrue ("The tested pdf-document doesn't match with the expected parameter: " +
-                         expected +
-                         " of the document.",
-                         m_aDocument.isDocumentEncrypted () == expected);
+      assertTrue ("The tested pdf-document doesn't match with the expected parameter: " +
+                  expected +
+                  " of the document.",
+                  m_aDocument.isDocumentEncrypted () == expected);
     }
 
   }
@@ -634,11 +638,11 @@ public class DocumentTester implements IDocumentAssertion
     throw new UnsupportedOperationException ();
     // checkAttributes();
     // if (checkConstructorParam()) {
-    // Assert.assertTrue(TESTEDDOC + pdfFile
+    // assertTrue(TESTEDDOC + pdfFile
     // + " doesn't match with the expected owner password: " + expected,
     // document.isOwnerPasswd(expected));
     // } else {
-    // Assert.assertTrue("The expected owner password: " + expected
+    // assertTrue("The expected owner password: " + expected
     // + " doensn't match the owner password of the pdf file",
     // document.isOwnerPasswd(expected));
     // }
@@ -659,12 +663,12 @@ public class DocumentTester implements IDocumentAssertion
     throw new UnsupportedOperationException ();
     // checkAttributes();
     // if (checkConstructorParam()) {
-    // Assert.assertTrue(
+    // assertTrue(
     // TESTEDDOC + pdfFile
     // + " doens't match the expected userpassword: " + expected
     // , document.isUserPasswd(expected));
     // } else {
-    // Assert.assertTrue("The expected user password: " + expected
+    // assertTrue("The expected user password: " + expected
     // + " doens't match the userpassword of the tested pdf file",
     // document.isUserPasswd(expected));
     // }
@@ -682,17 +686,17 @@ public class DocumentTester implements IDocumentAssertion
     checkAttributes ();
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (TESTEDDOC +
-                         m_sPFDFFile +
-                         " do not match, the expected version: " +
-                         expected,
-                         expected == m_aDocument.getVersion ());
+      assertTrue (TESTEDDOC +
+                  m_sPFDFFile +
+                  " do not match, the expected version: " +
+                  expected,
+                  expected == m_aDocument.getVersion ());
     }
     else
     {
-      Assert.assertTrue ("The Versions of the document do not match, expected: " +
-                         expected,
-                         expected == m_aDocument.getVersion ());
+      assertTrue ("The Versions of the document do not match, expected: " +
+                  expected,
+                  expected == m_aDocument.getVersion ());
     }
   }
 
@@ -757,11 +761,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The font: " + expected + " does not match in the document: " + m_sPFDFFile + ".", found);
+      assertTrue ("The font: " + expected + " does not match in the document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue ("The font: " + expected + " does not match.", found);
+      assertTrue ("The font: " + expected + " does not match.", found);
     }
   }
 
@@ -799,11 +803,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (FONTNAMES + expected + " do not match in the document: " + m_sPFDFFile + ".", found);
+      assertTrue (FONTNAMES + expected + " do not match in the document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue (FONTNAMES + expected + " do not match.", found);
+      assertTrue (FONTNAMES + expected + " do not match.", found);
     }
 
   }
@@ -827,11 +831,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The font name: " + expected + " does not match in the document: " + m_sPFDFFile + ".", found);
+      assertTrue ("The font name: " + expected + " does not match in the document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue ("The font name: " + expected + " does not match.", found);
+      assertTrue ("The font name: " + expected + " does not match.", found);
     }
   }
 
@@ -869,11 +873,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (FONTNAMES + expected + " do not match in the document: " + m_sPFDFFile + ".", found);
+      assertTrue (FONTNAMES + expected + " do not match in the document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue (FONTNAMES + expected + " do not match.", found);
+      assertTrue (FONTNAMES + expected + " do not match.", found);
     }
 
   }
@@ -897,16 +901,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The supposed type: " +
-                         expected +
-                         " does not match in the document: " +
-                         m_sPFDFFile +
-                         ".",
-                         found);
+      assertTrue ("The supposed type: " + expected + " does not match in the document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue ("The supposed type: " + expected + " does not match.", found);
+      assertTrue ("The supposed type: " + expected + " does not match.", found);
     }
   }
 
@@ -944,11 +943,11 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (SUPTYPES + expected + " do not match the hole document: " + m_sPFDFFile + ".", found);
+      assertTrue (SUPTYPES + expected + " do not match the hole document: " + m_sPFDFFile + ".", found);
     }
     else
     {
-      Assert.assertTrue (SUPTYPES + expected + " do not match the hole document.", found);
+      assertTrue (SUPTYPES + expected + " do not match the hole document.", found);
     }
   }
 
@@ -971,16 +970,16 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue ("The type: " +
-                         expected +
-                         " does not match on this Page of the document: " +
-                         m_sPFDFFile +
-                         ".",
-                         found);
+      assertTrue ("The type: " +
+                  expected +
+                  " does not match on this Page of the document: " +
+                  m_sPFDFFile +
+                  ".",
+                  found);
     }
     else
     {
-      Assert.assertTrue ("The type: " + expected + " does not match on this Page.", found);
+      assertTrue ("The type: " + expected + " does not match on this Page.", found);
     }
 
   }
@@ -1019,16 +1018,16 @@ public class DocumentTester implements IDocumentAssertion
     }
     if (checkConstructorParam ())
     {
-      Assert.assertTrue (SUPTYPES +
-                         expected +
-                         " do not match on the supposed page of the document: " +
-                         m_sPFDFFile +
-                         ".",
-                         found);
+      assertTrue (SUPTYPES +
+                  expected +
+                  " do not match on the supposed page of the document: " +
+                  m_sPFDFFile +
+                  ".",
+                  found);
     }
     else
     {
-      Assert.assertTrue (SUPTYPES + expected + " do not match on the supposed page of the document.", found);
+      assertTrue (SUPTYPES + expected + " do not match on the supposed page of the document.", found);
     }
   }
 
@@ -1049,17 +1048,17 @@ public class DocumentTester implements IDocumentAssertion
     {
       if (numberOfBookmarks == 0)
       {
-        Assert.assertTrue (true);
+        assertTrue (true);
       }
       else
       {
-        Assert.fail ("Not Same");
+        fail ("Not Same");
       }
 
     }
     else
     {
-      Assert.assertEquals (numberOfBookmarks, list.size ());
+      assertEquals (numberOfBookmarks, list.size ());
     }
 
   }
@@ -1069,19 +1068,19 @@ public class DocumentTester implements IDocumentAssertion
     final List <?> list = m_aDocument.getAllBookmarks ();
     if ((list == null) && (bookmarkName == null))
     {
-      Assert.assertTrue (true);
+      assertTrue (true);
     }
     else
     {
       if (list == null)
       {
-        Assert.fail ("Not Same");
+        fail ("Not Same");
       }
       else
       {
         if (bookmarkName == null)
         {
-          Assert.fail ("Not Same");
+          fail ("Not Same");
         }
         else
         {
@@ -1092,14 +1091,14 @@ public class DocumentTester implements IDocumentAssertion
             final String s = (String) i.next ();
             if (s.equals (bookmarkName))
             {
-              Assert.assertTrue (true);
+              assertTrue (true);
               found = true;
               break;
             }
           }
           if (!found)
           {
-            Assert.fail ("Unable to find" + bookmarkName);
+            fail ("Unable to find" + bookmarkName);
           }
         }
       }
@@ -1117,7 +1116,7 @@ public class DocumentTester implements IDocumentAssertion
     final List <?> list = m_aDocument.getAllBookmarks ();
     for (int i = 0; i < list.size (); i++)
     {
-      Assert.assertEquals (bookmarks[i], list.get (i));
+      assertEquals (bookmarks[i], list.get (i));
     }
   }
 }
